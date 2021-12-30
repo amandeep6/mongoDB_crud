@@ -1,0 +1,98 @@
+Interaction with mongodb
+ - MongoDB is light weight database.
+ - MongoDB follows the client server architecture.
+ - MongoDB follows mongodb protocols.
+ - Mongoserver running on port no 27017.
+ - MongoDB supports JSON.
+ 
+Installation of MongoDB
+1. Download and install mongodb(community edition)
+	https://www.mongodb.com/try/download/community
+*****for windows ******
+2. Create directory structure
+	c:/data/db
+3. Set path for environment variables
+	-> computer 
+	-> properties 
+	-> advance system settings
+	-> advanced tab
+	-> set environmet veriables
+	-> click on path
+	-> edit
+	-> copy and paste path of installation of mongodb
+	   where mongo.exe and mongod.exe located
+	   
+MongoDB Quries (local database)
+Open two command prompts
+>mongod		-> mongo server
+>mongo		-> mongo client -> auto connect to server
+
+ - create and switch to database
+	>use nodedb;
+ - create collection
+	>db.createCollection("products")
+ - insert data
+	>db.products.insert({"p_id":111, "p_name":"p_one", "p_cost":10000})
+ - fetch data
+	>db.products.find()
+ - show databases
+	> show dbs
+ - delete database
+	>db.dropDatabase()
+	
+	
+<>
+	fetch
+		- fetch.js
+	insert
+		- insert.js
+	update
+		- update.js
+	delete
+		- delete.js
+	 - server.js
+	 
+download modules
+	express
+	mongodb
+	body-parser
+	cors
+	
+>yarn add express mongodb body-parser cors --save
+	
+
+For cloud database
+1. Login to mongodb.com (atlas)
+2. Browse collections
+3. Create database 'nodedb' with collection 'products'
+4. Insert documents
+5. Click on databases from left panel
+6. Click on connect
+7. click on Connect to application
+8. Copy url and follow steps below url from web page
+	mongodb+srv://admin:root@mdb.vtkja.mongodb.net/nodedb?retryWrites=true&w=majority
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
